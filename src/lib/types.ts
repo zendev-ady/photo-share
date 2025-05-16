@@ -15,7 +15,7 @@ export interface Photo {
   filename: string;
   original_url: string;
   thumbnail_url?: string;
-  metadata?: any;
+  metadata?: Record<string, unknown>; // Optional metadata field
   file_size?: number;
   mime_type?: string;
   uploaded_at: string;

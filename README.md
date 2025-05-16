@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FotoShare 📸
 
-## Getting Started
+Jednoduchá webová aplikace pro sdílení fotek z akcí bez složitého nastavování.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# 1. Klonujte projekt
+git clone https://github.com/zendev-ady/photo-share.git
+cd photo-share
+
+# 2. Instalace závislostí
+pnpm install
+
+# 3. Nastavte .env.local
+cp .env.example .env.local
+# Vyplňte Supabase credentials
+
+# 4. Spusťte dev server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 Detailní dokumentace
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 📋 **[SETUP.md](./SETUP.md)** - Kompletní návod pro nastavení na novém PC
+- 🏗️ **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Technická architektura
+- 🔧 **[DEVELOPMENT.md](./DEVELOPMENT.md)** - Návod pro vývojáře
+- 🚀 **[DEPLOYMENT.md](./DEPLOYMENT.md)** - Nasazení do produkce
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💡 Co je FotoShare?
 
-## Learn More
+FotoShare umožňuje snadné sdílení fotek mezi přáteli:
+- ✨ Žádná registrace potřeba
+- 🖼️ Zachovává kvalitu a metadata fotek
+- 🌐 Funguje na všech zařízeních
+- ⚡ Rychlé a jednoduché
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Frontend**: Next.js 13+ • React 18 • TypeScript • Tailwind CSS  
+**Backend**: Next.js API Routes • Supabase  
+**Database**: PostgreSQL (Supabase) • Supabase Storage  
+**Hosting**: Vercel
